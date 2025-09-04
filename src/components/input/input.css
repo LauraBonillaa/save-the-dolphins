@@ -1,0 +1,77 @@
+/* Estilos para el componente Input */
+
+#codeForm {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#codeInput {
+  flex: 1;
+  height: 56px;
+  padding: 0 24px;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  background: #fff;
+  color:rgba(30, 50, 80, 0.9);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
+}
+
+#codeInput::placeholder {
+  color:rgba(30, 50, 80, 0.9);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+#submitBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  background:#fff;
+  color:rgba(30, 50, 80, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 120ms ease;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+}
+
+#submitBtn:hover {
+  transform: translateY(-1px);
+}
+
+#arrow {
+  font-size: 20px;
+  font-weight: 600;
+  color:rgba(30, 50, 80, 0.9);
+}
+
+#resultMsg {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Responsive para el formulario */
+@media (max-width: 480px) {
+  #codeForm {
+    max-width: 80%;
+  }
+  
+  #codeInput {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+}
