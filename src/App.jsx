@@ -8,7 +8,7 @@ function App() {
   const [isCorrect, setIsCorrect] = useState(false)
 
   function handleSubmit(codigo) {
-    if (codigo === "1234") {
+    if (codigo === "4731562") {
       setResult("¡Código correcto!");
       setIsCorrect(true)
     } else {
